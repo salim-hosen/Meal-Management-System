@@ -1,0 +1,468 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body,html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	font-size: 1em;
+}
+
+
+
+
+input[type='submit']{
+	cursor: pointer;
+}
+
+header, section, article, footer{
+	display: block;
+	overflow: hidden;
+}
+
+#wrapper{
+	width: 100%;
+	max-width: 100%;
+}
+
+.container{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	box-shadow: inset 0px 1px 4px #A0A0A0;
+}
+
+header,footer{
+	background: #323234;
+	color: #fff;
+	padding: 2%;
+}
+
+.heading{
+	width: 32%;
+	float: left;
+}
+
+.heading a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.heading h2{
+	font-size: 2.5em;
+	margin-top: 5px;
+}
+
+.heading span, .bazzar_tbl h2>span{
+	color: #FF1493;
+}
+
+.login{
+	width: 50%;
+	float: right;
+}
+
+.login a,.sameArticle button{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background: #FF1493;
+	width: 90px;
+	float: right;
+	margin: 2%;
+	text-align: center;
+	padding: 2%;
+	font-weight: bold;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+.sameArticle a{
+	text-decoration: none;
+}
+
+.login a:hover{
+	background: #CA0F7C;
+}
+
+.sameArticle{
+	width: 39%;
+	margin: 5%;
+	height: 220px;
+	box-shadow: 1px 1px 6px #A9A9A9;
+	float: left;
+}
+
+.sameArticle i{
+	text-align: center;
+	display: block;
+	font-size: 8em;
+	color: #323234;
+	padding: 10px;
+}
+
+.sameArticle button{
+	float: none;
+	margin: 15px auto;
+	width: 40%;
+}
+
+article h2{
+	text-align: center;
+  padding-bottom: 1.5%;
+	font-size: 2em;
+}
+
+footer p{
+	text-align: center;
+}
+
+/* Login Page Css */
+
+.login_form,.meal_tab,.bazzar_tbl,.off{
+	width: 50%;
+	margin: 20px auto;
+	
+	padding: 2%;
+	box-shadow: 1px 1px 10px #A8A8A8;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.loghead h2{
+	text-align: center;
+	background: #FF1493;
+	color: #fff;
+	font-size: 1.8em;
+	padding: 1%;
+	line-height: 40px;
+	margin-bottom: 4%;
+}
+
+.row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.col-1,.col-2{
+	padding: 1.5%;
+	font-weight: bold;
+	color: #444;
+	width: 25%;
+	float: left;
+}
+
+.col-2{
+	width: 68%;
+}
+
+input[type="text"],input[type="password"]{
+	width: 99%;
+	padding: 4px;
+	display: block;
+	border: 1px solid #ccc;
+}
+
+input[type='submit']{
+	background: #FF1493;
+	border: none;
+	display: block;
+	padding: 3% 8%;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 4px;
+}
+
+.meal_tab{
+	width: 80%;
+}
+
+table{
+	width: 100%;
+}
+
+.meal_tab td{
+	float: left;
+	padding: 1.5%;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+
+.meal_tab tr:nth-child(2n+1),.bazzar_tbl tr:nth-child(2n+1){
+	background: #FFD0FF;
+}
+
+.meal_tab tr:nth-child(2n),.bazzar_tbl  tr:nth-child(2n){
+	background: #F0F0F0;
+}
+
+.meal_tab tr:first-child td{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.meal_tab td a{
+	text-decoration: none;
+	background: #FF1493;
+	padding: 2% 5%;
+	color: #fff;
+	margin-right: 3%;
+	font-weight: bold;
+	font-size: 1em;
+	border-radius: 4px;
+	font-family: monospace;
+}
+
+.meal_tab td:first-child{
+	width: 5%;
+}
+
+.meal_tab td:nth-child(2){
+	width: 26%;
+}
+
+.meal_tab td:last-child{
+	width: 60%;
+}
+
+.bazzar_tbl{
+	width: 90%;
+}
+
+.bazzar_tbl tr:first-child td{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.bazzar_tbl td{
+	padding: 1%;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.bazzar_tbl a{
+	color: #FF1493;
+	margin-right: 3%;
+}
+
+.off{
+	width: 60%;
+}
+
+input[type="date"],select{
+	display: block;
+	float: left;
+	width: 40%;
+	margin-right: 5%;
+	padding: 1.5%;
+}
+
+.off .col-1{
+	width: 15%;
+}
+
+
+.tot td {
+	font-weight: bold;
+	color: #FF1493;
+	font-size: 1.4em;
+	background: #fff;
+}
+
+.errMsg {
+				color: #f00c;
+				font-size: 1.1em;
+				text-align: center;
+				font-weight: bold;
+				display: block;
+				border: 1px solid blue;
+				width: 50%;
+				margin: 10px auto;
+				padding: 1%;
+			}
+			.sucMsg {
+				color: green;
+				text-align: center;
+				font-size: 1.1em;
+				font-weight: bold;
+				display: block;
+				border: 1px solid blue;
+				width: 50%;
+				margin: 10px auto;
+				padding: 1%;
+			}
+
+/* Responsive Web Css */
+
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+	.login{
+		margin-top: 5px;
+	}
+	
+	.tot td {
+	font-size: 1.3em;
+  }
+	
+	.off{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 599px){
+	.heading{
+		width: 100%;
+		text-align: center;
+	}
+	.login{
+		width: 50%;
+		overflow: hidden;
+		text-align: center;
+		margin: 0 auto;
+		float: none;
+	}
+	.login a{
+		float: none;
+		display: inline-block;
+	}
+	
+	.sameArticle{
+		height: 170px;
+	}
+	.sameArticle i{
+		font-size: 6em;
+	}
+	.sameArticle button{
+		width: 70%;
+		font-size: 0.8em;
+		padding: 3%;
+	}
+	.login_form{
+		width: 90%;
+	}
+	.login_form h2{
+		font-size: 1.5em;
+	}
+	
+	.meal_tab{
+		width: 90%;
+	}
+	
+	.meal_tab tr:first-child td{
+		font-size: 1em;
+	}
+	.meal_tab td a{
+		background: none;
+		color: #FF1493;
+		margin: 0 5px;
+		text-decoration: underline;
+		padding: 0;
+	}
+	.tot td {
+	font-size: 1.2em;
+	width: 35%
+  }
+	.off{
+		width: 85%;
+	}
+	.off .col-1{
+		width: 10%;
+	}
+	
+	input[type='date']{
+		width: 46%;
+	}
+}
+
+@media only screen and (max-width: 415px){
+	input[type='date'],select{
+		float: none;
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	.off .col-1{
+		width: 15%;
+	}
+	input[type='date']{
+		width: 96%;
+	}
+}
+
+@media only screen and (max-width:340px){
+	.heading h2{
+		font-size: 2.1em
+	}
+	.sameArticle{
+		width: 80%;
+		margin: 10px auto;
+		float: none;
+	}
+	
+	.sameArticle i{
+		font-size: 5.5em;
+	}
+	
+	.sameArticle button{
+		font-size: 0.8em;
+		width: 45%;
+	}
+	
+	input[type='text'],input[type='password']{
+		width: 98%;
+		padding: 1%;
+	}
+	
+	.login_form h2{
+		font-size: 1.3em;
+	}
+	input[type='submit']{
+		font-size: 0.8em;
+	}
+	.col-1{
+		font-size: 0.85em;
+		padding-top: 5px;
+	}
+	.meal_tab{
+		width: 96%;
+	}
+	.meal_tab td:first-child{
+		width: 6%;
+	}
+	.meal_tab td:nth-child(2){
+		width: 28%;
+	}
+	.meal_tab td:last-child{
+		width: 55%;
+	}
+	
+	.bazzar_tbl tr:first-child td{
+		font-size: 1.1em;
+	}
+	.bazzar_tbl td{
+		font-size: 0.85em;
+	}
+	.meal_tab td{
+		font-size: 1em;
+	}
+	input[type='date'],select{
+		float: none;
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	.off .col-1{
+		width: 15%;
+	}
+	input[type='date']{
+		width: 96%;
+	}
+	.loghead h2{
+		font-size: 1.4em;
+	}
+}
